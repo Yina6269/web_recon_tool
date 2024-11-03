@@ -1,0 +1,12 @@
+# railway.toml configuration for your Go web reconnaissance tool
+[build]
+  # Set up to use Docker
+  dockerfile = "Dockerfile"
+
+[deploy]
+  # Configure the deployment process
+  start_cmd = "./web_recon --mode full --host http://testphp.vulnweb.com"
+  
+[env]
+  # Define any environment variables needed for deployment here
+  PORT = "8080"
