@@ -105,7 +105,7 @@ func main() {
     if port == "" {
         port = "8080"
     }
-	fmt.Printf("Listening on 0.0.0.0:%s\n", port)
+	
 	displayBanner()
 
 	if len(os.Args) < 2 {
