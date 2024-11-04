@@ -1,6 +1,7 @@
 package vulncheck
 
 import (
+	 "log"
 	"bytes"
 	"fmt"
 	"github.com/common-nighthawk/go-figure"
@@ -51,6 +52,7 @@ func CheckVulnerabilities(target string, openPorts []int) map[int][]Vulnerabilit
 
 		 apiKey := os.Getenv("SHODAN_API_KEY")
              if apiKey == "" {
+		      log.Fatal("Shodan API key not set")
              panic("Shodan API key not set")
     } 
 
