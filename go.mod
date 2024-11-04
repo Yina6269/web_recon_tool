@@ -1,6 +1,6 @@
 module web_Recon_tool
 
-go 1.23.2
+go 1.20
 
 require (
 	github.com/briandowns/spinner v1.23.1
