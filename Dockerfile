@@ -17,4 +17,5 @@ RUN go build -o web_recon .
 EXPOSE 8080
 
 
-CMD ["./web_recon", "--mode", "full", "--host", "0.0.0.0", "--target", "http://testphp.vulnweb.com"]
+CMD ["./web_recon", "--mode", "full", "--host", "0.0.0.0", "--port", "${PORT:-8080}", "--target", "http://testphp.vulnweb.com"]
+
