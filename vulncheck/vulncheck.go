@@ -49,7 +49,10 @@ func CheckVulnerabilities(target string, openPorts []int) map[int][]Vulnerabilit
 			vulns[port] = portVulns
 		}
 
-		apiKey := os.Getenv("SHODAN_API_KEY") // Ensure your API key is stored in an environment variable
+		 apiKey := os.Getenv("SHODAN_API_KEY")
+             if apiKey == "" {
+             panic("Shodan API key not set")
+    } 
 
 		hostInfo, err := shodan.GetShodanInfo(apiKey, target)
 		if err != nil {
@@ -57,7 +60,7 @@ func CheckVulnerabilities(target string, openPorts []int) map[int][]Vulnerabilit
 			return nil
 		}
 
-		// Now you can display or process hostInfo
+		
 		shodan.DisplayHostInfo(hostInfo)
 
 	}
