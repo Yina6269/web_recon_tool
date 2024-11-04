@@ -4,9 +4,9 @@
   dockerfile = "Dockerfile"
 
 [deploy]
-  # Configure the deployment process
-  start_cmd = "./web_recon --mode full --host http://testphp.vulnweb.com"
-  
+  # Configure the deployment process to bind to 0.0.0.0 and use the PORT environment variable
+  start_cmd = "./web_recon --mode full --host 0.0.0.0 --port ${PORT}"
+
 [env]
   # Define any environment variables needed for deployment here
-  PORT = "8080"
+  PORT = "8080" 
