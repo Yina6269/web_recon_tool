@@ -22,7 +22,7 @@ The **Web Recon Tool** is a powerful reconnaissance framework designed for penet
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/web_recon_tool.git
+   git clone https://github.com/naodEthiop/web_recon_tool.git
    cd web_recon_tool
    ```
 
