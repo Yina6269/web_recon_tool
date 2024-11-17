@@ -20,7 +20,7 @@ func displayBanner() {
 	banner := figure.NewColorFigure("Web Recon Tool", "cyberlarge", "cyan", true)
 	color.Cyan("------------------------------------------------------------------------------------------------")
 	banner.Print()
-	color.Green("                                                                      CODED BY: NAOD-ETHIOP")
+	color.Green("                                                                      CODED BY: NAOD-ETHIOP & YNEBEB DAGNE")
 	color.Cyan("------------------------------------------------------------------------------------------------")
 }
 
